@@ -1,3 +1,90 @@
+/* ===================================================
+   FEEDBACK & CONTACT PAGE (feedback.html) - Member 4
+   =================================================== */
+
+.fb-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.fb-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.fb-card h3 {
+  margin-top: 0;
+  color: #d35400;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.feedback-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid #d35400;
+  border-color: #d35400;
+}
+
+.fb-button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: #d35400;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.fb-button:hover {
+  background: #b84700;
+}
+
+/* Responsive: stack contact + form on tablets/phones */
+@media (max-width: 768px) {
+  .fb-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-card {
+    padding: 16px;
+  }
+}
 /* ==========================================================================
    Campus Bites - Shared Master Stylesheet
    Collaborative DevOps Project | University Cafeteria Website
