@@ -1,0 +1,201 @@
+
+/* =========================================
+   Campus Bites - Shared Stylesheet
+   Order Process Page
+   ========================================= */
+
+/* General order page styling */
+.order-page {
+    font-family: Arial, sans-serif;
+    color: #26352e;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Hero section */
+.order-page .order-hero {
+    background: #edf5ed;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.order-page .order-hero h1 {
+    color: #20543c;
+    font-size: 2.8rem;
+    margin: 0 0 12px;
+}
+
+.order-page .order-hero p {
+    max-width: 650px;
+    margin: 0 auto 22px;
+}
+
+.order-page .order-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #20543c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.order-page .order-btn:hover {
+    background: #153c2a;
+}
+
+/* Main ordering section */
+.order-page .order-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 20px;
+}
+
+.order-page .order-section h2,
+.order-page .order-guidelines h2 {
+    text-align: center;
+    color: #20543c;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.order-page .order-intro {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #58665e;
+}
+
+/* Four ordering steps */
+.order-page .order-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.order-page .order-step {
+    border: 1px solid #dce6dd;
+    border-radius: 10px;
+    padding: 24px 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-page .order-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
+}
+
+.order-page .step-number {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background: #e1efe3;
+    color: #20543c;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.order-page .order-step h3 {
+    color: #20543c;
+    margin: 18px 0 10px;
+    font-size: 1.15rem;
+}
+
+.order-page .order-step p {
+    color: #58665e;
+    margin-bottom: 0;
+}
+
+/* Guidelines section */
+.order-page .order-guidelines {
+    background: #f5f7f4;
+    padding: 55px 20px;
+}
+
+.order-page .guideline-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.order-page .guideline-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.order-page .guideline-card {
+    background: #ffffff;
+    border-left: 4px solid #d9aa45;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.order-page .guideline-card h3 {
+    color: #20543c;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.order-page .guideline-card p {
+    color: #58665e;
+    margin-bottom: 0;
+}
+
+/* Bottom call-to-action */
+.order-page .order-bottom {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.order-page .order-bottom h2 {
+    color: #20543c;
+}
+
+.order-page .order-bottom p {
+    margin-bottom: 22px;
+}
+
+/* Footer */
+.order-page footer {
+    background: #173f35;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Tablet responsive layout */
+@media (max-width: 900px) {
+    .order-page .order-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    .order-page .order-hero {
+        padding: 45px 18px;
+    }
+
+    .order-page .order-hero h1 {
+        font-size: 2rem;
+    }
+
+    .order-page .order-steps,
+    .order-page .guideline-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-page .order-section,
+    .order-page .order-guidelines {
+        padding: 35px 16px;
+    }
+
+    .order-page .order-step {
+        padding: 20px;
+    }
+}
