@@ -123,3 +123,43 @@
     .order-page .order-section, .order-page .order-guidelines { padding: 35px 16px; }
     .order-page .order-step { padding: 20px; }
 }
+
+/* Deals Page Styles */
+.deals-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.daily-special {
+  background-color: #fff3cd;
+  border-left: 5px solid #ff9800;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.deal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.deal-price {
+  font-weight: bold;
+  color: #d35400;
+}
+
+/* Responsive Media Query for Deals Page */
+@media (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+}
