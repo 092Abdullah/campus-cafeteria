@@ -1,2 +1,3 @@
-# campus-cafeteria
-Campus Bites cafeteria informational website for collaborative Git/GitHub assignment
+# Campus Bites
+
+Campus Bites is a fictional university cafeteria website for collaborative Git/GitHub assignment.
